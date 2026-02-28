@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>INVOICE</h1>
+        <form>
+            <div class="mb-3">
+                <label for="CU" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="CU" aria-describedby="customerHelp">
+            </div>
+            <br/>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <br/>
+             <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <br/>
+        </form>
+
+        <div class="form-section">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <input type="number" id="quantity" placeholder="Quantity" min="1">
+            <input type="number" id="price" placeholder="Price per Unit" min="0.01" step="0.01">
+            <input type="number" id="discount" placeholder="Discount (%)" min="0" max="100" step="0.01">
+            <button id="addItem">Add Item</button>
+        </div>
+
+        <div class="invoice-section">
+            <table id="invoiceTable">
+    
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Subtotal:</td>
+                        <td id="subtotal">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Total Discount:</td>
+                        <td id="totalDiscount">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Tax (5%):</td>
+                        <td id="taxAmount">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>Grand Total:</strong></td>
+                        <td id="grandTotal"><strong>0</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="resetBtn">Reset Invoice</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
