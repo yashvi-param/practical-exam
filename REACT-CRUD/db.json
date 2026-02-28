@@ -1,0 +1,25 @@
+const person =[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email":"john@example.com",
+        "phone":"123-456-7890",
+        "image":"https://tse2.mm.bing.net/th/id/OIP.OvuFCW8ja8YZM4ipX5_V4AAAAA?pid=Api&P=0&h=180"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email":"jane@example.com",
+        "phone":"987-654-3210",
+        "image":"https://i.pinimg.com/originals/0c/8f/f9/0c8ff9db33b4f75533ba68c8b9df85b6.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Alice Johnson",
+        "email":"alice@example.com",
+        "phone":"555-123-4567",
+        "image":"https://tse4.mm.bing.net/th/id/OIP.sxnixrA7gIZUs4UACuf7UAAAAA?pid=Api&P=0&h=180"
+    }
+];
+
+export default person;
